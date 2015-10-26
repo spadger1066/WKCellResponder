@@ -13,6 +13,16 @@
 		DC3A10DF1BDE0060003DA25C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A10DE1BDE0060003DA25C /* Assets.xcassets */; };
 		DC3A10E21BDE0060003DA25C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3A10E01BDE0060003DA25C /* LaunchScreen.storyboard */; };
 		DC3A10ED1BDE0060003DA25C /* WKCellResponderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A10EC1BDE0060003DA25C /* WKCellResponderTests.swift */; };
+		DC3A10FD1BDE0086003DA25C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3A10FB1BDE0086003DA25C /* Interface.storyboard */; };
+		DC3A10FF1BDE0086003DA25C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A10FE1BDE0086003DA25C /* Assets.xcassets */; };
+		DC3A11061BDE0086003DA25C /* WKCellResponderWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC3A11051BDE0086003DA25C /* WKCellResponderWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC3A110D1BDE0086003DA25C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A110C1BDE0086003DA25C /* InterfaceController.swift */; };
+		DC3A110F1BDE0086003DA25C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A110E1BDE0086003DA25C /* ExtensionDelegate.swift */; };
+		DC3A11111BDE0086003DA25C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A11101BDE0086003DA25C /* NotificationController.swift */; };
+		DC3A11131BDE0086003DA25C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A11121BDE0086003DA25C /* Assets.xcassets */; };
+		DC3A11171BDE0086003DA25C /* WKCellResponderWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DC3A10F91BDE0086003DA25C /* WKCellResponderWatch.app */; };
+		DC3A11271BDE0448003DA25C /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A11261BDE0448003DA25C /* RowController.swift */; };
+		DC3A11291BDEAB3B003DA25C /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A11281BDEAB3B003DA25C /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +33,46 @@
 			remoteGlobalIDString = DC3A10D31BDE0060003DA25C;
 			remoteInfo = WKCellResponder;
 		};
+		DC3A11071BDE0086003DA25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3A10CC1BDE0060003DA25C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3A11041BDE0086003DA25C;
+			remoteInfo = "WKCellResponderWatch Extension";
+		};
+		DC3A11151BDE0086003DA25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3A10CC1BDE0060003DA25C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3A10F81BDE0086003DA25C;
+			remoteInfo = WKCellResponderWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC3A111B1BDE0086003DA25C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC3A11061BDE0086003DA25C /* WKCellResponderWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3A111F1BDE0086003DA25C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DC3A11171BDE0086003DA25C /* WKCellResponderWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC3A10D41BDE0060003DA25C /* WKCellResponder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKCellResponder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +85,19 @@
 		DC3A10E81BDE0060003DA25C /* WKCellResponderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKCellResponderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3A10EC1BDE0060003DA25C /* WKCellResponderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKCellResponderTests.swift; sourceTree = "<group>"; };
 		DC3A10EE1BDE0060003DA25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3A10F91BDE0086003DA25C /* WKCellResponderWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKCellResponderWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3A10FC1BDE0086003DA25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DC3A10FE1BDE0086003DA25C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC3A11001BDE0086003DA25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3A11051BDE0086003DA25C /* WKCellResponderWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKCellResponderWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3A110B1BDE0086003DA25C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DC3A110C1BDE0086003DA25C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DC3A110E1BDE0086003DA25C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DC3A11101BDE0086003DA25C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DC3A11121BDE0086003DA25C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC3A11141BDE0086003DA25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3A11261BDE0448003DA25C /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		DC3A11281BDEAB3B003DA25C /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3A11021BDE0086003DA25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +130,8 @@
 			children = (
 				DC3A10D61BDE0060003DA25C /* WKCellResponder */,
 				DC3A10EB1BDE0060003DA25C /* WKCellResponderTests */,
+				DC3A10FA1BDE0086003DA25C /* WKCellResponderWatch */,
+				DC3A11091BDE0086003DA25C /* WKCellResponderWatch Extension */,
 				DC3A10D51BDE0060003DA25C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +141,8 @@
 			children = (
 				DC3A10D41BDE0060003DA25C /* WKCellResponder.app */,
 				DC3A10E81BDE0060003DA25C /* WKCellResponderTests.xctest */,
+				DC3A10F91BDE0086003DA25C /* WKCellResponderWatch.app */,
+				DC3A11051BDE0086003DA25C /* WKCellResponderWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +169,39 @@
 			path = WKCellResponderTests;
 			sourceTree = "<group>";
 		};
+		DC3A10FA1BDE0086003DA25C /* WKCellResponderWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A10FB1BDE0086003DA25C /* Interface.storyboard */,
+				DC3A10FE1BDE0086003DA25C /* Assets.xcassets */,
+				DC3A11001BDE0086003DA25C /* Info.plist */,
+			);
+			path = WKCellResponderWatch;
+			sourceTree = "<group>";
+		};
+		DC3A11091BDE0086003DA25C /* WKCellResponderWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A110C1BDE0086003DA25C /* InterfaceController.swift */,
+				DC3A11281BDEAB3B003DA25C /* DetailInterfaceController.swift */,
+				DC3A11261BDE0448003DA25C /* RowController.swift */,
+				DC3A110E1BDE0086003DA25C /* ExtensionDelegate.swift */,
+				DC3A11101BDE0086003DA25C /* NotificationController.swift */,
+				DC3A11121BDE0086003DA25C /* Assets.xcassets */,
+				DC3A11141BDE0086003DA25C /* Info.plist */,
+				DC3A110A1BDE0086003DA25C /* Supporting Files */,
+			);
+			path = "WKCellResponderWatch Extension";
+			sourceTree = "<group>";
+		};
+		DC3A110A1BDE0086003DA25C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A110B1BDE0086003DA25C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +212,12 @@
 				DC3A10D01BDE0060003DA25C /* Sources */,
 				DC3A10D11BDE0060003DA25C /* Frameworks */,
 				DC3A10D21BDE0060003DA25C /* Resources */,
+				DC3A111F1BDE0086003DA25C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC3A11161BDE0086003DA25C /* PBXTargetDependency */,
 			);
 			name = WKCellResponder;
 			productName = WKCellResponder;
@@ -134,6 +242,40 @@
 			productReference = DC3A10E81BDE0060003DA25C /* WKCellResponderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DC3A10F81BDE0086003DA25C /* WKCellResponderWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3A111C1BDE0086003DA25C /* Build configuration list for PBXNativeTarget "WKCellResponderWatch" */;
+			buildPhases = (
+				DC3A10F71BDE0086003DA25C /* Resources */,
+				DC3A111B1BDE0086003DA25C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC3A11081BDE0086003DA25C /* PBXTargetDependency */,
+			);
+			name = WKCellResponderWatch;
+			productName = WKCellResponderWatch;
+			productReference = DC3A10F91BDE0086003DA25C /* WKCellResponderWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DC3A11041BDE0086003DA25C /* WKCellResponderWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3A11181BDE0086003DA25C /* Build configuration list for PBXNativeTarget "WKCellResponderWatch Extension" */;
+			buildPhases = (
+				DC3A11011BDE0086003DA25C /* Sources */,
+				DC3A11021BDE0086003DA25C /* Frameworks */,
+				DC3A11031BDE0086003DA25C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKCellResponderWatch Extension";
+			productName = "WKCellResponderWatch Extension";
+			productReference = DC3A11051BDE0086003DA25C /* WKCellResponderWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,10 +288,19 @@
 				TargetAttributes = {
 					DC3A10D31BDE0060003DA25C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DC3A10E71BDE0060003DA25C = {
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = DC3A10D31BDE0060003DA25C;
+					};
+					DC3A10F81BDE0086003DA25C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DC3A11041BDE0086003DA25C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 				};
 			};
@@ -168,6 +319,8 @@
 			targets = (
 				DC3A10D31BDE0060003DA25C /* WKCellResponder */,
 				DC3A10E71BDE0060003DA25C /* WKCellResponderTests */,
+				DC3A10F81BDE0086003DA25C /* WKCellResponderWatch */,
+				DC3A11041BDE0086003DA25C /* WKCellResponderWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +340,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3A10F71BDE0086003DA25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3A10FF1BDE0086003DA25C /* Assets.xcassets in Resources */,
+				DC3A10FD1BDE0086003DA25C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3A11031BDE0086003DA25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3A11131BDE0086003DA25C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +380,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3A11011BDE0086003DA25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3A11111BDE0086003DA25C /* NotificationController.swift in Sources */,
+				DC3A110F1BDE0086003DA25C /* ExtensionDelegate.swift in Sources */,
+				DC3A11271BDE0448003DA25C /* RowController.swift in Sources */,
+				DC3A110D1BDE0086003DA25C /* InterfaceController.swift in Sources */,
+				DC3A11291BDEAB3B003DA25C /* DetailInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +399,16 @@
 			isa = PBXTargetDependency;
 			target = DC3A10D31BDE0060003DA25C /* WKCellResponder */;
 			targetProxy = DC3A10E91BDE0060003DA25C /* PBXContainerItemProxy */;
+		};
+		DC3A11081BDE0086003DA25C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3A11041BDE0086003DA25C /* WKCellResponderWatch Extension */;
+			targetProxy = DC3A11071BDE0086003DA25C /* PBXContainerItemProxy */;
+		};
+		DC3A11161BDE0086003DA25C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3A10F81BDE0086003DA25C /* WKCellResponderWatch */;
+			targetProxy = DC3A11151BDE0086003DA25C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -235,6 +427,14 @@
 				DC3A10E11BDE0060003DA25C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC3A10FB1BDE0086003DA25C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3A10FC1BDE0086003DA25C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -325,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKCellResponder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder;
@@ -336,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKCellResponder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder;
@@ -367,6 +569,70 @@
 			};
 			name = Release;
 		};
+		DC3A11191BDE0086003DA25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKCellResponderWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DC3A111A1BDE0086003DA25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKCellResponderWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DC3A111D1BDE0086003DA25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKCellResponderWatch_Extension;
+				INFOPLIST_FILE = WKCellResponderWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DC3A111E1BDE0086003DA25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKCellResponderWatch_Extension;
+				INFOPLIST_FILE = WKCellResponderWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKCellResponder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,6 +658,22 @@
 			buildConfigurations = (
 				DC3A10F51BDE0060003DA25C /* Debug */,
 				DC3A10F61BDE0060003DA25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC3A11181BDE0086003DA25C /* Build configuration list for PBXNativeTarget "WKCellResponderWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3A11191BDE0086003DA25C /* Debug */,
+				DC3A111A1BDE0086003DA25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC3A111C1BDE0086003DA25C /* Build configuration list for PBXNativeTarget "WKCellResponderWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3A111D1BDE0086003DA25C /* Debug */,
+				DC3A111E1BDE0086003DA25C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
